@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3f3f3;
+  font-family: "Poppins", sans-serif;
+}
+.menu {
+  background-color: black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-gap: 40px 40px;
+}
+.heading {
+  background-image: url('https://media.istockphoto.com/photos/friends-toasting-with-wine-and-beer-at-rustic-dinner-party-picture-id909208170?k=6&m=909208170&s=612x612&w=0&h=E-q93TxyZMRsOgYW8nwWXExhPWLR_tCclvQxdroRwEc=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  margin-bottom: 30px;
+  padding: 120px 0 30px 0;
+  grid-column: 1/-1;
+  text-align: center;
+}
+.heading > h1 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+.heading > h3 {
+  color: #f3f3f3;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+.food-items {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #c59c5fc0;
+  margin: 0 20px;
+  transition: transform .2s;
+  background-color: black;
+}
+.food-items:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.food-items img {
+  position: relative;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.details {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap: 15px;
+}
+.details-sub {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.details-sub > h5 {
+    color: #f3f3f3;
+  font-weight: 600;
+  font-size: 18px;
+}
+.price {
+    color: #f3f3f3;
+  text-align: right;
+}
+.details > p {
+  color: #6f6f6f;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  align-self: stretch;
+}
+.details > button {
+  background-color:#c59d5f;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 180px;
+}
+
+.logo{
+  height: 10%;
+  width: 10%;
+  padding: 2rem;
+}
+    </style>
+</head>
+<body>
+<header>
+  <img class="logo" src="https://mail.google.com/mail/u/0?ui=2&ik=d641b36733&attid=0.1&permmsgid=msg-f:1705170572643561566&th=17a9fb99f7de705e&view=att&disp=safe&realattid=f_kr200hs10" alt="logo">
+</header>
+
+
+    <div class="menu">
+        <div class="heading">
+            <h2 class="sub-headline">La Vista</h2><br>
+              <h1 class="headline headline-dark" style="color: white;">&mdash; MENU &mdash;</h1>
+
+        </div>
+        <div class="food-items">
+            <img src="https://th.bing.com/th/id/R.ca80a736be3c62ad4405a2bb75cc48cb?rik=Ld0CcYGFgmJd4Q&riu=http%3a%2f%2fwww.pepperdelight.com%2fwp-content%2fuploads%2f2016%2f01%2fChickenPasta1.jpg&ehk=nrKlVV%2b%2fO6YZ4wurl13roAm6qhWf8Jc5Om%2bow5HCDBY%3d&risl=&pid=ImgRaw">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Alfredo Pasta</h5>
+                    <h5 class="price"> INR 200 </h5>
+                </div>
+                <p>Alfredo pasta is a great option for your quick dinners and therefore I often make them for my meals.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../menu/chicken.jpeg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Honey Garlic Chicken</h5>
+                    <h5 class="price"> INR 350 </h5>
+                </div>
+                <p>Five ingredients and 20 minutes are all it takes to enjoy this honey garlic chicken. With the much-loved sauce that won over kitchens everywhere.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../menu/soup.jpeg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Manchow Soup</h5>
+                    <h5 class="price"> INR 175 </h5>
+                </div>
+                <p>Manchow soup is a soup popular in Indian Chinese cuisine due to its easy preparation and hot spicy taste. Must Try </p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../menu/Spaghetti.jpeg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Basil Pesto Spaghetti</h5>
+                    <h5 class="price"> INR 200 </h5>
+                </div>
+                <p>Crisp, summery, onion flavour with a fresh basil and lemon undertone - Scallion and Basil Pesto Spaghetti is bound to be your new favourite pasta!</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../menu/salmon.jpeg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Roast Salmon</h5>
+                    <h5 class="price"> INR 290 </h5>
+                </div>
+                <p>Salmon is a good source of protein, which is important for maintaining bone health, preventing muscle loss and helping the body heal and repair. Healthy as well as tasty</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2019/06/deep-dish-pizza-chicago.jpg?resize=1024%2C750&ssl=1" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Deep dish Pizza</h5>
+                    <h5 class="price"> INR 315 </h5>
+                </div>
+                <p>No surprises here! Chicago is known for the deep dish pizza. The super-stuffed pie is assembled upside-down to prevent overcooking all your favorite fixings.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://www.expatica.com/app/uploads/sites/2/2020/03/Gazpacho.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Gazpacho</h5>
+                    <h5 class="price"> INR 200 </h5>
+                </div>
+                <p>What better way to cool down during a hot Spanish summer than with a cool bowl of gazpacho? Usually served as an appetizer, this chilled tomato soup definitely packs a punch.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/07/alabama-fried-green-tomato-shutterstock.jpg?w=1024&ssl=1" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Fried Green Tomato</h5>
+                    <h5 class="price"> INR 145 </h5>
+                </div>
+                <p>Fried green tomatoes are just one of the 23 Iconic American Foods Everyone Should Try Once!</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://www.expatica.com/app/uploads/sites/2/2020/03/Patatas-bravas.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Patatas Bravas</h5>
+                    <h5 class="price"> INR 129 </h5>
+                </div>
+                <p>Looking to whip up some delicious tapas for your next Spanish dinner party? Then look no further than patatas bravas, a dish that is native to Spain and super easy to create.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://www.expatica.com/app/uploads/sites/2/2020/03/Tortilla-Espan%CC%83ola.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Tortilla Española</h5>
+                    <h5 class="price"> INR 215 </h5>
+                </div>
+                <p>Another tapas bar favorite is tortilla Española – or Spanish omelette as it’s known around the world. However, it’s not just a tapas treat. Tortilla can also be eaten as a main dish, a break time snack, or even in a sandwich, which is popular with kids.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2020/02/fried-ravioli-bread-crumbs.jpg?resize=1024%2C750&ssl=1" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Toasted Ravioli</h5>
+                    <h5 class="price"> INR 190 </h5>
+                </div>
+                <p>This isn't just a dish you can get at the Olive Garden! Toasted ravioli is thought to have originated in an Italian neighborhood of St. Louis.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://vaya.in/recipes/wp-content/uploads/2018/09/Smoked-Salmon-Sushi-Roll.jpg" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Sushi</h5>
+                    <h5 class="price"> INR 200 </h5>
+                </div>
+                <p>A staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2019/09/cincinnati-chili.jpg?resize=1024%2C750&ssl=1" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Cincinnati Chili</h5>
+                    <h5 class="price"> INR 195 </h5>
+                </div>
+                <p>Chili-topped spaghetti? Only in Ohio! For more on this uniquely midwestern dish, don't miss our explainer: Skyline Chili: What to Know About the Iconic Midwestern Chain.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2020/02/pasties-dish.jpg?resize=1024%2C750&ssl=1" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Pasties</h5>
+                    <h5 class="price"> INR 75 </h5>
+                </div>
+                <p>You might think of meat hand pies as a British food, but they're traditional in Michigan, too. Pasties made an easy, filling lunch for 19th-century miners in the state, and they're still popular in Michigan today.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2019/12/nashville-hot-chicken.jpg?resize=1024%2C750&ssl=1" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Hot Chicken</h5>
+                    <h5 class="price"> INR 400 </h5>
+                </div>
+                <p>The secret to preparing the best Nashville hot chicken is to baste the chicken with a spicy paste made with lard and cayenne pepper before or after breading it. Most people enjoy with a slice of white bread and topped with pickles.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://i.pinimg.com/originals/b6/3e/92/b63e92d1f8cbe2b2849a63003de331a1.jpg" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Virgin Cucumber Gimlet</h5>
+                    <h5 class="price"> INR 140 </h5>
+                </div>
+                <p>Combine all ingredients and shake with ice. Serve in a rocks glass over crushed ice. Garnish with a rolled cucumber slice.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://thumbor.thedailymeal.com/tmUG1jJnMFoSnAwPqC4V-BZVBEY=//https://www.thedailymeal.com/sites/default/files/recipe/2020/1_shirley_temple.jpg" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Shirley Ginger</h5>
+                    <h5 class="price"> INR 165 </h5>
+                </div>
+                <p>Stir ginger beer, club soda, lime juice, and grenadine in a pitcher. Pour into tall glasses with ice. Garnish with lime rounds and or maraschino cherries.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://icdn5.themanual.com/image/themanual/berry-burlesque-800x800.jpg" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Berry Burlesque</h5>
+                    <h5 class="price"> INR 170 </h5>
+                </div>
+                <p>Combine and shake all ingredients except ginger beer in a shaker tin with ice, and then strain over fresh ice. Top with ginger beer.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://www.fraserhealth.ca/-/media/2BB242EF8B504B098B5977A41B82157F.jpg?h=433&la=en&w=770&hash=8566A186C1DAE3B43EDAB7E731DCDBC3CCCB6A3A" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Refrescante Cooler</h5>
+                    <h5 class="price"> INR 125 </h5>
+                </div>
+                <p>Combine coconut water, cucumbers, lime juice, sugar and mint leaves. Let chill for 1 to 2 hours. Serve as cooler mocktails.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://www.thespruceeats.com/thmb/cI9Yn1OsIA2stjuFzPd7g1GxSpQ=/4609x3073/filters:fill(auto,1)/types-of-bubble-tea-766451-hero-01-a6dca4dd096a4d8abdde1a754766f851.jpg" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Boba Tea</h5>
+                    <h5 class="price"> INR 210 </h5>
+                </div>
+                <p>Boba Tea contains a wide range of antioxidants that blocks any oxidative stress accumulation. Available in Flavours: Strawberry, Green Tea, Mango, Blueberry, Chocolate, Milk Tea</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://computerbackgroundimages.com/wp-content/uploads/2020/08/Cappuccino-filled-Cup-on-Red-Saucer-Photo-by-Ben-Libby-from-Pexels-scaled.jpg" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Cappuccino</h5>
+                    <h5 class="price"> INR 150 </h5>
+                </div>
+                <p>Cappuccino might be a favorite drink of some people. It provides various psychological health benefits such as mind stimulation and mental alertness.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://i.pinimg.com/originals/7c/89/ca/7c89caeb989654207895074aabd75ae9.jpg" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Brownie Sundae</h5>
+                    <h5 class="price"> INR 125 </h5>
+                </div>
+                <p>Topped with ice cream and chocolate sauce and rich cherries, these fudgy, gooey brownies make the perfect base for a classic, restaurant-style brownie sundae. Don't forget the whipped cream!</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://th.bing.com/th/id/R.4298163c5e00266d389d785a34b8bc22?rik=pbXfs90dEPBxiw&riu=http%3a%2f%2fcos.h-cdn.co%2fassets%2fcm%2f14%2f25%2f53a0680ee3b93_-_pancakes_xl1.jpg&ehk=OxWxJmqB2jTkNFSMlLNsEwjLO10gLkFn%2f51dpaR6JrE%3d&risl=&pid=ImgRaw" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>JohnnyCakes</h5>
+                    <h5 class="price"> INR 145 </h5>
+                </div>
+                <p>Also known as battercake, corn cake, and journey cake, these cornmeal-based patties are served for breakfast, lunch, and dinner. Many people also like to break the cakes up into pieces and soak them in milk and sugar.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://i.pinimg.com/originals/f2/fe/af/f2feaf655caab9d1feaa497434dbf656.jpg" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Raspberry Walnut Torte</h5>
+                    <h5 class="price"> INR 155 </h5>
+                </div>
+                <p>Five stars all the way! This is a very easy recipe, with lots of texture. It smelled heavenly while baking. The contrast of the tart sauce over the sweet torte is a match made in heaven!</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://i.pinimg.com/originals/29/30/a0/2930a0ac293d9659e33f05a6f1925090.jpg" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Vanilla Buttercream Frosting</h5>
+                    <h5 class="price"> INR 75 </h5>
+                </div>
+                <p>This has the perfect texture and sweetness. I'm so happy my search for a good frosting recipe is over.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://th.bing.com/th/id/R.1fb81084fd5947d208f6e0d5653d5f49?rik=Atun6GLP%2fIftbw&riu=http%3a%2f%2fimages.huffingtonpost.com%2f2015-07-29-1438194128-3791769-national_cheesecake_day.jpg&ehk=CI2%2bQambyqjfSsTq7pffBE%2bWatR6RDjoxZGHj2qQQKs%3d&risl=&pid=ImgRaw" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Maple-Cranberry cheesecake</h5>
+                    <h5 class="price"> INR 220 </h5>
+                </div>
+                <p>This maple cheesecake recipe may look intimidating, but it's not. If you make one holiday dessert, this is the 5-star dessert to showcase.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="https://cdn.vox-cdn.com/thumbor/mz0dMzmYTIGaXIi3HgMRBgQTbgQ=/0x0:7254x4841/1200x800/filters:focal(3047x1841:4207x3001)/cdn.vox-cdn.com/uploads/chorus_image/image/59040739/shutterstock_1037089564.0.jpg" height="280">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Churros</h5>
+                    <h5 class="price"> INR 175 </h5>
+                </div>
+                <p>A churro is a type of fried dough from Spanish and Portuguese cuisine served with Rich Chocolate/Caramel dip.</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

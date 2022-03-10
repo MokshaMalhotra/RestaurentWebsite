@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-image: url("https://th.bing.com/th/id/R.32d48920194b39df18fdfeea55611ead?rik=amsvhoXhweB2OA&riu=http%3a%2f%2fwww.rubellhotels.com%2fd%2frubellhotels%2fmedia%2fRepour_Bar%2f__thumbs_1600_1024_crop%2fAlbion-2015-016.jpg&ehk=qWBDYnFk6DnLsjW%2fmn%2bdFeGu29n9X0hPE5s%2bq10Ya68%3d&risl=&pid=ImgRaw");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #ffffff2e;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color: #c59d5f;
+    border-color: #c59d5f;
+    color: white;
+  }
+  
+  /* Style the container for inputs */
+  .container {
+    background-color: transparent;
+    padding: 100px;
+  }
+  
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+    display: none;
+    background: #ccc;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    opacity: 0.8;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
